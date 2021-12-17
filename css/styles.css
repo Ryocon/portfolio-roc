@@ -54,7 +54,12 @@ h2 {
     padding: 20px;
     text-shadow: -5px -5px plum,
     -5px -5px plum;
-    
+    padding-top: 50px;
+}
+
+h2:hover {
+    text-shadow: 5px 5px plum,
+    5px 5px plum;
 }
 
 .about {
@@ -78,7 +83,10 @@ h2 {
 
 #project-box-1 {
     flex: 4 0 80%;
-    flex-grow: 5;
+}
+
+#project-box-1 .subheadings {
+    right: 850px;
 }
 
 .project-box {
@@ -87,14 +95,28 @@ h2 {
     border-width: 5px;
     justify-content: center;
     flex: 1 0 20%;
-    padding: 15px;
+    padding: 5px;
+    z-index: 0;
+    position: relative;
     /* background-image: url("https://picsum.photos/200/"); */
 }
+
+.project-box:hover {
+    border-color: plum;
+}
+
 
 .subheadings {
     background-color: coral;
     height: 65px;
-    width: 300px;
+    width: 270px;
+    z-index: 1;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    opacity: 90%;
     }
 
 footer {
@@ -127,14 +149,17 @@ footer {
     .nav-top {
         align-self: center;
         margin-left: -25px;
-        margin-bottom: -110px;
+        margin-bottom: 0px;
         border-style: none;
     }
+
 
     header {
         display: flex;
         flex-direction: column;
         align-items: center;
+        height: 20%;
+        margin-top: -20px;
     }
 
     h1 {
@@ -159,6 +184,11 @@ footer {
         height: auto;
     }
 
+    #project-box-1 .subheadings {
+        right: 0px;
+        top: 105px;
+    }
+
     .projects .project-box {
         flex-direction: column;
         align-items: center;
@@ -166,6 +196,17 @@ footer {
         width: 100%;
         height: auto;
     }
+
+    .project-box:hover {
+        border-color: plum;
+    }
+
+    .subheadings {
+        top: 160px;
+        width: 50%;
+        font-size: 12px;
+    }
+
 
     #contact-title {
         margin-left: 160px;
