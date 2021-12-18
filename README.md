@@ -11,4 +11,6 @@ The links for both in-page and external are fully functional. The page is respon
 ## Screenshots 
 <br>
 
-![a gif of the page](screenshots/portfolio.gif)
+![a gif of the page in desktop view](screenshots/portfolio.gif)
+
+![a gif of the page in mobile view](screenshots/portfolio-mobile.gif)
