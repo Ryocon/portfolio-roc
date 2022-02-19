@@ -211,12 +211,14 @@ footer {
 
 
 /* settings and styles for smaller viewports */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 700px) {
     body {
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 2px;
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
     .nav-top {
@@ -239,6 +241,11 @@ footer {
         margin-left: auto;
     }
 
+    .about {
+        width: 250px;
+        align-self: center;
+    }
+
     .hero {
         max-width: 200px;
     }
@@ -249,6 +256,12 @@ footer {
 
     #project-title  {
         margin-left: 165px;
+    }
+
+    .projects {
+        width: 300px;
+        margin-left: 75px;
+       
     }
 
     #project-box-1 img {
