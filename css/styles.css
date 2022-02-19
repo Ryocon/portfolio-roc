@@ -216,7 +216,7 @@ footer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin: 2px;
+        margin-left: 25px;
         max-width: 100%;
         overflow-x: hidden;
     }
@@ -244,6 +244,7 @@ footer {
     .about {
         width: 250px;
         align-self: center;
+        font-size: 20px;
     }
 
     .hero {
