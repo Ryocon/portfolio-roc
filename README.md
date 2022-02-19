@@ -31,3 +31,10 @@ Updated demo of the portfolio page
 <br>
 
 ![a gif of the updated portfolio](screenshots/portfolio-updated.gif)
+
+## Links
+
+Github Repo - [portfolio-roc](https://github.com/Ryocon/portfolio-roc)
+<br>
+
+Gitub Pages - [Deployed](https://ryocon.github.io/portfolio-roc/)
