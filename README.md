@@ -20,4 +20,14 @@ In the future I would like to recreate the portfolio page using a CSS framework 
 
 ![a gif of the page in desktop view](screenshots/portfolio.gif)
 
-![a gif of the page in mobile view](screenshots/portfolio-mobile.gif)
+<br>
+
+![a gif of the responsive page](screenshots/portfolio-mobile.gif)
+
+<br>
+
+Updated demo of the portfolio page
+
+<br>
+
+![a gif of the updated portfolio](screenshots/portfolio-updated.gif)
