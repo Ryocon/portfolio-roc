@@ -2,11 +2,11 @@
 
 ## Description
 
-For this project I have made a portfolio page using only html and css. The projects currently listed are placeholder projects bar the main project which was added to fufill the criteria of linking to a deployed application.
+For this project I have made a portfolio page using only html and css. The projects listed are fully deployed with a clickable link to said deployed page. The only project currently unavailable is the 'react portfolio'. This was left there intentionally as an aspirational target for myself.
 
 I have taken a clean approach to the design of the page. The white background (despite being a lover of dark mode) worked for the colour scheme I had chosen. I used css to create effects on the text on the page and make it somewhat interactive.
 
-The links for both in-page and external are fully functional. The page is responsive for different screen sizes using the flexbox property for both larger and smaller 
+The links for both in-page and external are fully functional and now include links to a digital animated CV and a downloaded PDF version. The page is responsive for different screen sizes using the flexbox property for both larger and smaller 
 sizes.
 
 ## Technologies
