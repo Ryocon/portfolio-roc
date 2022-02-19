@@ -51,6 +51,43 @@ h1:hover {
     float: right;
 }
 
+#main-title-link {
+    color: black;
+}
+
+#main-title-link:hover {
+    text-shadow: 5px 5px plum,
+    5px 5px plum;   
+}
+
+#project-two {
+    color: black;   
+}
+
+#project-two:hover {
+    text-shadow: 5px 5px plum,
+    5px 5px plum;   
+}
+
+#project-three {
+    color: black;   
+}
+
+#project-three:hover {
+    text-shadow: 5px 5px plum,
+    5px 5px plum;   
+}
+
+#project-four {
+    color: black;   
+}
+
+#project-four:hover {
+    text-shadow: 5px 5px plum,
+    5px 5px plum;   
+}
+
+
 /* consistent styling to all h2 elements */
 h2 {
     margin-left: 150px;
@@ -112,6 +149,24 @@ h2:hover {
 .project-box:hover {
     border-color: plum;
 }
+
+.portfolio-img-minor {
+    width: 150px;
+    height: 300px;
+    margin-top: 75px;
+ } 
+
+ .portfolio-img-pass {
+     width: 200px;
+     height: auto;
+     margin-top: 100px;
+ }
+
+ .portfolio-img-plan {
+     width: 200px;
+     height: auto;
+     margin-top: 100px;
+ }
 
 /* styling for each subheading placed over the image in the project boxes using absolute positioning to make it appear over the images */
 .subheadings {
