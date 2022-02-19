@@ -150,6 +150,7 @@ h2:hover {
     border-color: plum;
 }
 
+/* due to image size differences I created id's for each project image to keep them controlled and prevent the styling being inconsistent */
 .portfolio-img-minor {
     width: 150px;
     height: 300px;
