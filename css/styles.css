@@ -87,6 +87,15 @@ h1:hover {
     5px 5px plum;   
 }
 
+#project-five {
+    color: black;   
+}
+
+#project-five:hover {
+    text-shadow: 5px 5px plum,
+    5px 5px plum;   
+}
+
 
 /* consistent styling to all h2 elements */
 h2 {
@@ -143,7 +152,7 @@ h2:hover {
     padding: 5px;
     z-index: 0;
     position: relative;
-    /* background-image: url("https://picsum.photos/200/"); */
+    
 }
 
 .project-box:hover {
@@ -151,6 +160,15 @@ h2:hover {
 }
 
 /* due to image size differences I created id's for each project image to keep them controlled and prevent the styling being inconsistent */
+.portfolio-img {
+    width: 95%;
+}
+
+.portfolio-img-mcu {
+    margin-top: 100px;
+    width: 250px
+}
+
 .portfolio-img-minor {
     width: 150px;
     height: 300px;
@@ -169,10 +187,12 @@ h2:hover {
      margin-top: 100px;
  }
 
+
+
 /* styling for each subheading placed over the image in the project boxes using absolute positioning to make it appear over the images */
 .subheadings {
     background-color: coral;
-    height: 65px;
+    height: 90px;
     width: 270px;
     z-index: 1;
     position: absolute;
@@ -181,6 +201,10 @@ h2:hover {
     flex-direction: column;
     justify-content: left;
     opacity: 90%;
+}
+
+#main-sub {
+    height: 90px;
 }
 
 /* footer flex settings */
@@ -291,7 +315,7 @@ footer {
     .subheadings {
         top: 160px;
         width: 50%;
-        font-size: 12px;
+        font-size: 8px;
     }
 
     #contact-title {
