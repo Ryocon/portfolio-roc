@@ -12,9 +12,9 @@ const Section = styled.div`
   justify-content: space-between;
   `
 const Container = styled.div`
-  height: 100vh;
+  height: 100%;
   scroll-snap-align: center;
-  width: 100%;
+  width: 1400px;
   display: flex;
   justify-content: space-between;
   `
@@ -28,6 +28,7 @@ const ASide = styled.div`
   `
 const BSide = styled.div`
     flex: 3;
+    position: relative;
   `
 const Title = styled.h1`
     font-size: 36pt;
@@ -38,7 +39,21 @@ const Description = styled.p`
     /* gap: 10px; */
   `
 const HeroImage = styled.img`
-    height: 40%;
+    height: 30%;
+    object-fit: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    animation: animate 2s infinite ease alternate;
+
+    @keyframes animate {
+        to{
+            transform: translateY(20px);
+        }
+    }
   `
 const Button = styled.button`
   width: 100px;
