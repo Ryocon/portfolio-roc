@@ -22,7 +22,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   `
-const ASide = styled.div`
+const SideA = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
@@ -50,7 +50,7 @@ color: transparent;
   }
   `
 
-  const BSide = styled.div`
+  const SideB = styled.div`
   flex: 1;
   `
 
@@ -58,16 +58,16 @@ const Projects = () => {
     return (
         <Section>
             <Container>
-                <ASide>
+                <SideA>
                     <List>
                         {data.map((item) => (
                             <ListItem key={item}>{item}</ListItem>
                         ))}    
                     </List>
-                </ASide>
-                <BSide>
+                </SideA>
+                <SideB>
 
-                </BSide>
+                </SideB>
             </Container>
         </Section>
     )

@@ -18,7 +18,7 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
   `
-const ASide = styled.div`
+const SideA = styled.div`
     flex: 2;
     display: flex;
     flex-direction: column;
@@ -26,7 +26,7 @@ const ASide = styled.div`
     align-items: center;
     gap: 5px;
   `
-const BSide = styled.div`
+const SideB = styled.div`
     flex: 3;
     position: relative;
   `
@@ -72,15 +72,15 @@ const Hero = () => {
         <Section>
             <Navbar />
             <Container>
-                <ASide>
+                <SideA>
                     <Title>Hello There</Title>
                     <Description>I am the person doing the thing</Description>
                     <Button>Press Me</Button>
-                </ASide>
-                <BSide>
+                </SideA>
+                <SideB>
                     {/* 3d model pending */}
                     <HeroImage src="./public/images/rochimselfsmolroundedpng-min.png" />
-                </BSide>
+                </SideB>
             </Container>
         </Section>
     )
