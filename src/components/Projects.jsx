@@ -24,12 +24,30 @@ const Container = styled.div`
   `
 const ASide = styled.div`
   flex: 1;
+  display: flex;
+  align-items: center;
   `
 const List = styled.ul`
-
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   `
 const ListItem = styled.li`
-  
+color: transparent;
+  font-size: 50px;
+  cursor: pointer;
+  line-height: 1.2em;
+  text-shadow: 0 0 #000,
+  0 1.2em #FAA916;
+  overflow: hidden;
+  transition: .3s;
+
+  &:hover {
+    text-shadow:
+    0 -1.2em #000,
+    0 0 #FAA916;
+  }
   `
 
   const BSide = styled.div`
