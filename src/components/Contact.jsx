@@ -55,18 +55,22 @@ const SideB = styled.div`
   flex: 1;
   `
 
+const handleSubmit = e => {
+    e.preventDefault()
+}
+
 
 const Contact = () => {
     return (
         <Section>
             <Container>
                 <SideA>
-                    <Form>
+                    <Form onSubmit={handleSubmit}>
                         <Title>Get In Touch</Title>
                         <Input placeholder="Name"></Input>
                         <Input placeholder="Email"></Input>
                         <TextArea placeholder="Ask away!" rows={10}></TextArea>
-                        <Button>Send</Button>
+                        <Button type="submit">Send</Button>
                     </Form>
                 </SideA>
                 <SideB>
