@@ -64,7 +64,7 @@ const [success, setSuccess] = useState(false)
 const handleSubmit = e => {
     e.preventDefault()
 
-    emailjs.sendForm('service_c56bgyo', 'template_rycykrf', ref.current, 'pmgoIwBmppcQDLT3U')
+    emailjs.sendForm('service_olbngvn', 'template_8l5b8m5', ref.current, 'pmgoIwBmppcQDLT3U')
       .then((result) => {
           console.log(result.text);
           setSuccess(true)
