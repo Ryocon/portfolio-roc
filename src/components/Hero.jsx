@@ -91,14 +91,17 @@ const Hero = () => {
                       {/* I can add a loading component here */}
                       <Suspense fallback={null}>
                         <OrbitControls enableZoom={false} />
-                        <ambientLight intensity={0.8} />
-                        <directionalLight position={[3, 2, 1]} />
+                        <ambientLight intensity={1} 
+                        color='#faa916'/>
+                        <directionalLight position={[3, 3, 2]}
+                        color='white' />
                         <Sphere args={[1, 150, 200]} scale={2.4}>
                           <MeshDistortMaterial
                           color='#faa916'
                           attach='material'
                           distort={0.55}
                           speed={2}
+                          
                           />
 
 
