@@ -1,5 +1,7 @@
 import React from "react";
+import { useRef } from 'react'
 import styled from "styled-components";
+import Spline from '@splinetool/react-spline';
 
 
 const Section = styled.div`
@@ -48,12 +50,30 @@ const Button = styled.button`
   /* font-size: 1em; */
   `
 
+
+
 const About = () => {
+
+  // ! Incase I want the button to animate the spline
+  // const spline = useRef()
+
+  // function onLoad(splineApp) {
+  //   spline.current = splineApp
+  // }
+  
+  // function animateSpline() {
+  //   spline.current.emitEvent('mouseHover')
+  // }
+
     return (
         <Section>
             <Container>
                 <ASide>
                     {/* 3d model pending */}
+                    {/* <Spline scene="https://prod.spline.design/QLIeNGurFO2b5spw/scene.splinecode" onLoad={onLoad}
+                    /> */}
+                    <Spline scene="https://prod.spline.design/QLIeNGurFO2b5spw/scene.splinecode"
+                    />
                 </ASide>
                 <BSide>
                 <Title>About me</Title>

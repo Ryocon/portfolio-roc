@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
+import Spline from '@splinetool/react-spline';
 
 const Section = styled.div`
   height: 100vh;
@@ -39,7 +40,7 @@ const Description = styled.p`
     /* gap: 10px; */
   `
 const HeroImage = styled.img`
-    height: 30%;
+    height: 50%;
     object-fit: contain;
     position: absolute;
     top: 0;
@@ -67,6 +68,7 @@ const Button = styled.button`
   /* font-size: 1em; */
   `
 
+
 const Hero = () => {
     return (
         <Section>
@@ -74,12 +76,14 @@ const Hero = () => {
             <Container>
                 <SideA>
                     <Title>Hello There</Title>
+                  
                     <Description>I am the person doing the thing</Description>
                     <Button>Press Me</Button>
                 </SideA>
                 <SideB>
                     {/* 3d model pending */}
                     <HeroImage src="./public/images/rochimselfsmolroundedpng-min.png" />
+                    
                 </SideB>
             </Container>
         </Section>
@@ -87,3 +91,7 @@ const Hero = () => {
 }
 
 export default Hero
+
+
+
+

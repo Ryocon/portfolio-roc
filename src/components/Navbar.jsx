@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BiSearchAlt } from "react-icons/bi";
 
+
 const Section = styled.div`
   display: flex;
   justify-content: center;
@@ -30,7 +31,20 @@ const List = styled.ul`
   list-style: none;
 `;
 const ListItem = styled.li`
+  color: transparent;
+  font-size: 16px;
   cursor: pointer;
+  line-height: 1.2em;
+  text-shadow: 0 0 #000,
+  0 1.2em #FAA916;
+  overflow: hidden;
+  transition: .3s;
+
+  &:hover {
+    text-shadow:
+    0 -1.2em #000,
+    0 0 #FAA916;
+  }
 `;
 const Icons = styled.div`
   display: flex;
