@@ -72,7 +72,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./public/images/roc.png" />
+          <Logo src="./public/images/roc-logo.png" />
           <List>
             <ListItem>Home</ListItem>
             <ListItem>About</ListItem>

@@ -19,7 +19,7 @@ const Container = styled.div`
   justify-content: space-between;
   `
 const ASide = styled.div`
-    flex: 1;
+    flex: 2;
   `
 const BSide = styled.div`
     flex: 1;
@@ -72,7 +72,7 @@ const About = () => {
                     {/* 3d model pending */}
                     {/* <Spline scene="https://prod.spline.design/QLIeNGurFO2b5spw/scene.splinecode" onLoad={onLoad}
                     /> */}
-                    <Spline scene="https://prod.spline.design/QLIeNGurFO2b5spw/scene.splinecode"
+                    <Spline scene="https://draft.spline.design/FbmA2OUI3Oro1Pni/scene.splinecode"
                     />
                 </ASide>
                 <BSide>

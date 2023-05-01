@@ -1,7 +1,9 @@
-import React from "react";
+import React, { Suspense } from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
 import Spline from '@splinetool/react-spline';
+import { Canvas } from "@react-three/fiber";
+import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
 const Section = styled.div`
   height: 100vh;
@@ -20,7 +22,7 @@ const Container = styled.div`
   justify-content: space-between;
   `
 const SideA = styled.div`
-    flex: 2;
+    flex: 1;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -28,7 +30,7 @@ const SideA = styled.div`
     gap: 5px;
   `
 const SideB = styled.div`
-    flex: 3;
+    flex: 1;
     position: relative;
   `
 const Title = styled.h1`
@@ -49,6 +51,9 @@ const HeroImage = styled.img`
     right: 0;
     margin: auto;
     animation: animate 2s infinite ease alternate;
+    -moz-user-select: none;
+-webkit-user-select: none;
+user-select: none;
 
     @keyframes animate {
         to{
@@ -82,6 +87,26 @@ const Hero = () => {
                 </SideA>
                 <SideB>
                     {/* 3d model pending */}
+                    <Canvas>
+                      {/* I can add a loading component here */}
+                      <Suspense fallback={null}>
+                        <OrbitControls enableZoom={false} />
+                        <ambientLight intensity={0.8} />
+                        <directionalLight position={[3, 2, 1]} />
+                        <Sphere args={[1, 150, 200]} scale={2.4}>
+                          <MeshDistortMaterial
+                          color='#faa916'
+                          attach='material'
+                          distort={0.55}
+                          speed={2}
+                          />
+
+
+                        </Sphere>
+
+                      </Suspense>
+
+                    </Canvas>
                     <HeroImage src="./public/images/rochimselfsmolroundedpng-min.png" />
                     
                 </SideB>
