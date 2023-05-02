@@ -1,7 +1,6 @@
 import React, { Suspense } from "react";
 import styled from "styled-components";
 import Navbar from "./Navbar";
-import Spline from "@splinetool/react-spline";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, Sphere, MeshDistortMaterial } from "@react-three/drei";
 
@@ -145,7 +144,7 @@ const Hero = () => {
               </Sphere>
             </Suspense>
           </Canvas>
-          <HeroImage src="./public/images/rochimselfsmolroundedpng-min.png" />
+          <HeroImage src="images/rochimselfsmolroundedpng-min.png" />
         </SideB>
       </Container>
     </Section>

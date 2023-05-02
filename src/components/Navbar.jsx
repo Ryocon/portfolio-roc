@@ -99,7 +99,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="./public/images/roc-logo.png" />
+          <Logo src="/images/roc-logo.png" />
           <List>
             {/* <ListItem to='#About'>About</ListItem>
             <ListItem>Projects</ListItem>
