@@ -123,7 +123,7 @@ const Hero = () => {
       <Container>
         <SideA>
           <Title>RYAN O'CONNOR</Title>
-          <Description>All things web based and design</Description>
+          <Description>All things web and design</Description>
           <Button></Button>
         </SideA>
         <SideB>

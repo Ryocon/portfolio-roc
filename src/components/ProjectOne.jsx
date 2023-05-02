@@ -1,10 +1,17 @@
 import React, { Suspense } from "react";
-import { OrbitControls, Box, PerspectiveCamera } from "@react-three/drei";
+import {
+  OrbitControls,
+  Box,
+  PerspectiveCamera,
+  useTexture,
+} from "@react-three/drei";
 import { Canvas, useLoader } from "@react-three/fiber";
-import { TextureLoader } from "three/src/loaders/TextureLoader";
+
 
 function Scene() {
-  const texture = useLoader(TextureLoader, "/images/madchef-home.png");
+  const texture = useTexture({
+    map: "/images/madchef-home.png",
+  });
   return (
     <>
       <ambientLight intensity={0.4} />
@@ -12,7 +19,7 @@ function Scene() {
       <PerspectiveCamera makeDefault position={[10, 6, 36]} />
       <mesh>
         <Box args={[30, 18, 1]}>
-          <meshStandardMaterial map={texture} />
+          <meshStandardMaterial {...texture} />
         </Box>
       </mesh>
     </>
