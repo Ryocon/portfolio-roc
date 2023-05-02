@@ -1,5 +1,10 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
+import ProjectOne from './ProjectOne'
+import ProjectTwo from './ProjectTwo'
+import ProjectThree from './ProjectThree'
+import ProjectFour from './ProjectFour'
+import ProjectFive from './ProjectFive'
 
 // ! Projects in the list
 const data = [
@@ -55,18 +60,35 @@ color: transparent;
   `
 
 const Projects = () => {
+  const [project, setProject] = useState('')
     return (
         <Section>
             <Container>
                 <SideA>
                     <List>
                         {data.map((item) => (
-                            <ListItem key={item}>{item}</ListItem>
+                            <ListItem key={item} text={item} onClick={() => setProject(item)}>{item}</ListItem>
                         ))}    
                     </List>
                 </SideA>
                 <SideB>
-
+                  {project === 'Madchef' ? (
+                  <ProjectOne/>
+                  ) :
+                    project === 'Alt-F4' ? (
+                      <ProjectTwo/>
+                    ) :
+                      project === 'MCU-deep-diver' ? (
+                        <ProjectThree/>
+                      ) :
+                        project === 'Pokemon-API' ? (
+                          <ProjectFour/>
+                        ) :
+                          project === 'Team-Profile-Gen' ? (
+                            <ProjectFive/>
+                            ) : (
+                              <ProjectOne/>
+                            )}
                 </SideB>
             </Container>
         </Section>

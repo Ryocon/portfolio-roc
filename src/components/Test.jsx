@@ -1,7 +1,8 @@
-import React from "react";
-import { OrbitControls } from '@react-three/drei'
-import { Canvas } from '@react-three/fiber'
+import React, { Suspense } from "react";
+import { OrbitControls, useTexture, MeshDistortMaterial, Sphere, Box, RoundedBox } from '@react-three/drei'
+import { Canvas, useLoader } from '@react-three/fiber'
 import styled from 'styled-components'
+import { TextureLoader } from "three/src/loaders/TextureLoader";
 
 const Container = styled.div`
     height: 100vh;
@@ -9,20 +10,37 @@ const Container = styled.div`
     scroll-snap-align: center;
 `
 
+function Scene() {
+    const mapTest = useLoader(TextureLoader, './public/images/altf4-main.PNG')
+    return (
+        <>
+        <ambientLight intensity={0.2} />
+      <directionalLight />
+      <mesh>
+      <Box args={[30, 15, 1]} >
+        {/* <boxGeometry args={[30, 15, 1]} /> */}
+        <meshStandardMaterial map={mapTest}/>
+        
+        </Box>
+      </mesh>
+        </>
+    )
+}
 
-const Test = () => {
+
+export default function Test() {
+    // const textureTest = useLoader(TextureLoader, 'roc.png')
     return (
         <Container>
             <Canvas>
-                <OrbitControls enableZoom={false} autoRotate/>
-                <directionalLight position={ [ 3, 2, 1 ] } />
-            <mesh>
-            <torusGeometry args={[10, 3, 16, 100]} />
-            <meshStandardMaterial />
-            </mesh>
+                <OrbitControls />
+                
+            <Suspense fallback={null}>
+        <Scene />
+            </Suspense>
             </Canvas>
         </Container>
     )
 }
 
-export default Test
+// export default Test
