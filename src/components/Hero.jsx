@@ -125,7 +125,7 @@ const Hero = () => {
         <SideA>
           <Title>RYAN O'CONNOR</Title>
           <Description>All things web based and design</Description>
-          <Button>Learn More</Button>
+          <Button></Button>
         </SideA>
         <SideB>
           {/* 3d model pending */}

@@ -44,7 +44,20 @@ const List = styled.ul`
   gap: 20px;
   list-style: none;
 `;
-const ListItem = styled.li`
+// const ListItem = styled.li`
+//   color: transparent;
+//   font-size: 16px;
+//   cursor: pointer;
+//   line-height: 1.2em;
+//   text-shadow: 0 0 #000, 0 1.2em #faa916;
+//   overflow: hidden;
+//   transition: 0.3s;
+
+//   &:hover {
+//     text-shadow: 0 -1.2em #000, 0 0 #faa916;
+//   }
+// `;
+const Link = styled.a`
   color: transparent;
   font-size: 16px;
   cursor: pointer;
@@ -81,18 +94,6 @@ const Icon = styled.a`
   }
 `;
 
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #faa916;
-  color: black;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  font-family: inherit;
-  /* font-size: 1em; */
-`;
-
 const Navbar = () => {
   return (
     <Section>
@@ -100,9 +101,12 @@ const Navbar = () => {
         <Links>
           <Logo src="./public/images/roc-logo.png" />
           <List>
-            <ListItem>About</ListItem>
+            {/* <ListItem to='#About'>About</ListItem>
             <ListItem>Projects</ListItem>
-            <ListItem>Contact</ListItem>
+            <ListItem>Contact</ListItem> */}
+            <Link href='#about-section'>About</Link>
+            <Link href='#project-section'>Projects</Link>
+            <Link href='#contact-section'>Contact</Link>
           </List>
         </Links>
         <Icons>

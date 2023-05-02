@@ -102,7 +102,7 @@ const SideB = styled.div`
 const Projects = () => {
   const [project, setProject] = useState("");
   return (
-    <Section>
+    <Section id="project-section">
       <Container>
         <SideA>
           <List>

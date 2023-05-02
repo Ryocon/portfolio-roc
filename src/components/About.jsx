@@ -95,7 +95,7 @@ const About = () => {
   // }
 
   return (
-    <Section>
+    <Section id="about-section">
       <Container>
         <ASide>
           {/* 3d model pending */}
@@ -110,7 +110,7 @@ const About = () => {
             <br></br>Capable and experienced with a range of modern Fullstack
             technologies to build and design projects for the web
           </Description>
-          <Button>Press Me</Button>
+          <Button></Button>
         </BSide>
       </Container>
     </Section>

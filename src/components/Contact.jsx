@@ -123,7 +123,7 @@ const Contact = () => {
       );
   };
   return (
-    <Section>
+    <Section id="contact-section">
       <Container>
         <SideA>
           <Form ref={ref} onSubmit={handleSubmit}>
