@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { BiSearchAlt } from "react-icons/bi";
+import { FaLinkedin, FaGithub } from "react-icons/fa";
 
 
 const Section = styled.div`
@@ -49,12 +49,24 @@ const ListItem = styled.li`
 const Icons = styled.div`
   display: flex;
   align-items: center;
+  flex-direction: row;
   gap: 20px;
+
+  
 `;
-const Icon = styled.div`
+
+const Icon = styled.a`
   width: 20px;
   cursor: pointer;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    transition: .2s;
+    color: #FAA916;
+  }
 `;
+
 const Button = styled.button`
   width: 100px;
   padding: 10px;
@@ -74,17 +86,24 @@ const Navbar = () => {
         <Links>
           <Logo src="./public/images/roc-logo.png" />
           <List>
-            <ListItem>Home</ListItem>
             <ListItem>About</ListItem>
             <ListItem>Projects</ListItem>
             <ListItem>Contact</ListItem>
           </List>
         </Links>
         <Icons>
-          <Icon>
-            <BiSearchAlt size={24} />
+          <Icon href="https://www.linkedin.com/in/rocdev/" target="_blank">
+          <FaLinkedin size={24}  />
           </Icon>
-          <Button>Say Hi</Button>
+          <Icon href="https://github.com/Ryocon" target="_blank">
+          <FaGithub size={24} />
+          </Icon>
+    
+            
+            
+          
+          
+          {/* <Button>Say Hi</Button> */}
         </Icons>
       </Container>
     </Section>

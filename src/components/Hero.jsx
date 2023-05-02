@@ -29,17 +29,51 @@ const SideA = styled.div`
   align-items: center;
   gap: 5px;
 `;
-const SideB = styled.div`
-  flex: 1;
-  position: relative;
-`;
+
 const Title = styled.h1`
-  font-size: 36pt;
+  font-size: 42pt;
+  color: transparent;
+  cursor: pointer;
+  line-height: 1.2em;
+  text-shadow: 0 0 #000,
+  0 1.2em #FAA916;
+  overflow: hidden;
+  transition: .3s;
+  
+  &:hover {
+    text-shadow:
+    0 -1.2em #000,
+    0 0 #FAA916;
+  }
 `;
 const Description = styled.p`
   display: flex;
   align-items: center;
+  margin-top: -25px;
   /* gap: 10px; */
+`;
+
+const Button = styled.button`
+  width: 100px;
+  padding: 10px;
+  background-color: #faa916;
+  color: black;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  font-family: inherit;
+  /* font-size: 1em; */
+
+  &:hover {
+    transition: .2s;
+    background-color: #6d676e;
+    color: #faa916;
+  }
+`;
+
+const SideB = styled.div`
+  flex: 1;
+  position: relative;
 `;
 const HeroImage = styled.img`
   height: 50%;
@@ -61,17 +95,7 @@ const HeroImage = styled.img`
     }
   }
 `;
-const Button = styled.button`
-  width: 100px;
-  padding: 10px;
-  background-color: #faa916;
-  color: black;
-  cursor: pointer;
-  border: none;
-  border-radius: 10px;
-  font-family: inherit;
-  /* font-size: 1em; */
-`;
+
 
 const Hero = () => {
   return (
@@ -79,10 +103,9 @@ const Hero = () => {
       <Navbar />
       <Container>
         <SideA>
-          <Title>Hello There</Title>
-
-          <Description>I am the person doing the thing</Description>
-          <Button>Press Me</Button>
+          <Title>RYAN O'CONNOR</Title>
+          <Description>All things web based and design</Description>
+          <Button>Learn More</Button>
         </SideA>
         <SideB>
           {/* 3d model pending */}

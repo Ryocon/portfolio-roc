@@ -19,7 +19,7 @@ const Container = styled.div`
   justify-content: space-between;
   `
 const ASide = styled.div`
-    flex: 2;
+    flex: 1;
   `
 const BSide = styled.div`
     flex: 1;
@@ -28,13 +28,28 @@ const BSide = styled.div`
     justify-content: center;
     align-items: center;
     gap: 5px;
+    margin-right: 30px;
   `
 const Title = styled.h1`
     font-size: 36pt;
+    color: transparent;
+  line-height: 1.2em;
+  text-shadow: 0 0 #000,
+  0 1.2em #FAA916;
+  overflow: hidden;
+  transition: .3s;
+  margin-bottom: -5px;
+
+    &:hover {
+    text-shadow:
+    0 -1.2em #000,
+    0 0 #FAA916;
+  }
   `
 const Description = styled.p`
     display: flex;
     align-items: center;
+    text-align: center;
     /* gap: 10px; */
   `
 
@@ -48,6 +63,12 @@ const Button = styled.button`
   border-radius: 10px;
   font-family: inherit;
   /* font-size: 1em; */
+
+  &:hover {
+    transition: .2s;
+    background-color: #6d676e;
+    color: #faa916;
+  }
   `
 
 
@@ -76,8 +97,10 @@ const About = () => {
                     />
                 </ASide>
                 <BSide>
-                <Title>About me</Title>
-                    <Description>I am a dev</Description>
+                <Title>About</Title>
+                    <Description>
+                      Fullstack Developer, Educator and creative based in Warickshire, UK <br></br>Capable and experienced with a range of modern Fullstack technologies to build and design projects for the web 
+                      </Description>
                     <Button>Press Me</Button>
                 </BSide>
             </Container>

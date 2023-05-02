@@ -64,6 +64,12 @@ const Button = styled.a`
   /* font-size: 1em; */
   text-decoration: none;
   text-align: center;
+
+  &:hover {
+    transition: .2s;
+    background-color: #6d676e;
+    color: #faa916;
+  }
 `;
 
 const SideB = styled.div`

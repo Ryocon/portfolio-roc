@@ -51,6 +51,12 @@ const Button = styled.button`
   border-radius: 10px;
   font-family: inherit;
   /* font-size: 1em; */
+
+  &:hover {
+    transition: .2s;
+    background-color: white;
+    color: #faa916;
+  }
 `;
 const SideB = styled.div`
   flex: 1;
