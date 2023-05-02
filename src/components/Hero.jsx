@@ -13,6 +13,11 @@ const Section = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    height: 100vh;
+    
+  }
 `;
 const Container = styled.div`
   height: 100%;
@@ -21,6 +26,13 @@ const Container = styled.div`
   width: 100%;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    
+  }
 `;
 const SideA = styled.div`
   flex: 1;
@@ -44,6 +56,11 @@ const Title = styled.h1`
     text-shadow:
     0 -1.2em #000,
     0 0 #FAA916;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 28pt;
+    
   }
 `;
 const Description = styled.p`
@@ -74,6 +91,11 @@ const Button = styled.button`
 const SideB = styled.div`
   flex: 1;
   position: relative;
+
+  @media only screen and (max-width: 768px) {
+    align-items: center;
+    width: 100%;
+  }
 `;
 const HeroImage = styled.img`
   height: 50%;
@@ -93,6 +115,12 @@ const HeroImage = styled.img`
     to {
       transform: translateY(20px);
     }
+  }
+
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+    
   }
 `;
 

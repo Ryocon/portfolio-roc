@@ -17,9 +17,19 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
   `
 const ASide = styled.div`
     flex: 1;
+
+    @media only screen and (max-width: 768px) {
+    display: none;
+    
+  }
   `
 const BSide = styled.div`
     flex: 1;
@@ -29,6 +39,14 @@ const BSide = styled.div`
     align-items: center;
     gap: 5px;
     margin-right: 30px;
+
+    @media only screen and (max-width: 768px) {
+    align-items: center;
+    text-align: center;
+    margin-right: 0px;
+    
+  }
+
   `
 const Title = styled.h1`
     font-size: 36pt;

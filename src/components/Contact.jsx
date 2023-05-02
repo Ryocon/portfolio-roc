@@ -20,6 +20,11 @@ const SideA = styled.div`
   display: flex;
   align-items: center;
   justify-content: flex-end;
+
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+    
+  }
 `;
 const Title = styled.h2`
   font-size: 42pt;
@@ -30,11 +35,17 @@ const Title = styled.h2`
   overflow: hidden;
   transition: .3s;
   margin-bottom: 0px;
+  text-align: center;
   
   &:hover {
     text-shadow:
     0 -1.2em #000,
     0 0 #FAA916;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 32pt;
+    
   }
 `;
 const Form = styled.form`
@@ -42,6 +53,11 @@ const Form = styled.form`
   display: flex;
   flex-direction: column;
   gap: 10px;
+
+  @media only screen and (max-width: 768px) {
+    width: 80%;
+    
+  }
 `;
 const Input = styled.input`
   font-family: inherit;
@@ -74,6 +90,11 @@ const Button = styled.button`
 `;
 const SideB = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+    
+  }
 `;
 
 const Contact = () => {

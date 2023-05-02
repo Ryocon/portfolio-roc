@@ -26,11 +26,21 @@ const Container = styled.div`
   width: 1400px;
   display: flex;
   justify-content: space-between;
+
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
 `;
 const SideA = styled.div`
   flex: 1;
   display: flex;
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    text-align: center;
+    
+  }
 `;
 const List = styled.ul`
   list-style: none;
@@ -49,6 +59,10 @@ const ListItem = styled.li`
 
   &:hover {
     text-shadow: 0 -1.2em #000, 0 0 #faa916;
+  }
+
+  @media only screen and (max-width: 768px) {
+    font-size: 26pt;
   }
 `;
 
@@ -74,6 +88,17 @@ const Button = styled.a`
 
 const SideB = styled.div`
   flex: 1;
+
+  @media only screen and (max-width: 768px) {
+    width: 300px;
+    height: 300px;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    
+  }
 `;
 
 const Projects = () => {
