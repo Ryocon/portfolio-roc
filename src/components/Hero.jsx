@@ -34,7 +34,6 @@ const SideA = styled.div`
 const Title = styled.h1`
   font-size: 42pt;
   color: transparent;
-  cursor: pointer;
   line-height: 1.2em;
   text-shadow: 0 0 #000,
   0 1.2em #FAA916;

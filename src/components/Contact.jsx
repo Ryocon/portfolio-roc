@@ -22,7 +22,20 @@ const SideA = styled.div`
   justify-content: flex-end;
 `;
 const Title = styled.h2`
-  font-size: 30pt;
+  font-size: 42pt;
+  color: transparent;
+  line-height: 1.2em;
+  text-shadow: 0 0 #000,
+  0 1.2em #FAA916;
+  overflow: hidden;
+  transition: .3s;
+  margin-bottom: 0px;
+  
+  &:hover {
+    text-shadow:
+    0 -1.2em #000,
+    0 0 #FAA916;
+  }
 `;
 const Form = styled.form`
   width: 500px;
