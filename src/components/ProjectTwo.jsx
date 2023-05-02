@@ -4,7 +4,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 
 function Scene() {
-  const texture = useLoader(TextureLoader, "./public/images/altf4-main.PNG");
+  const texture = useLoader(TextureLoader, "/images/altf4-main.PNG");
   return (
     <>
       <ambientLight intensity={0.5} />

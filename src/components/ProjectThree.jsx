@@ -4,7 +4,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 
 function Scene() {
-  const texture = useLoader(TextureLoader, "./public/images/mcu-snip.png");
+  const texture = useLoader(TextureLoader, "/images/mcu-snip.png");
   return (
     <>
       <ambientLight intensity={0.3} />

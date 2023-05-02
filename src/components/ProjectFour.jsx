@@ -4,10 +4,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 import { TextureLoader } from "three/src/loaders/TextureLoader";
 
 function Scene() {
-  const texture = useLoader(
-    TextureLoader,
-    "./public/images/pokemon-api-desktop.PNG"
-  );
+  const texture = useLoader(TextureLoader, "/images/pokemon-api-desktop.PNG");
   return (
     <>
       <ambientLight intensity={0.6} />

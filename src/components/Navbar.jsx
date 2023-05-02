@@ -2,7 +2,6 @@ import React from "react";
 import styled from "styled-components";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
 
-
 const Section = styled.div`
   display: flex;
   justify-content: center;
@@ -23,7 +22,6 @@ const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 100%;
-    
   }
 `;
 
@@ -38,7 +36,6 @@ const Logo = styled.img`
 
   @media only screen and (max-width: 768px) {
     display: none;
-    
   }
 `;
 
@@ -52,15 +49,12 @@ const ListItem = styled.li`
   font-size: 16px;
   cursor: pointer;
   line-height: 1.2em;
-  text-shadow: 0 0 #000,
-  0 1.2em #FAA916;
+  text-shadow: 0 0 #000, 0 1.2em #faa916;
   overflow: hidden;
-  transition: .3s;
+  transition: 0.3s;
 
   &:hover {
-    text-shadow:
-    0 -1.2em #000,
-    0 0 #FAA916;
+    text-shadow: 0 -1.2em #000, 0 0 #faa916;
   }
 `;
 const Icons = styled.div`
@@ -73,7 +67,6 @@ const Icons = styled.div`
     width: 20%;
     gap: 20px;
   }
-  
 `;
 
 const Icon = styled.a`
@@ -83,8 +76,8 @@ const Icon = styled.a`
   color: black;
 
   &:hover {
-    transition: .2s;
-    color: #FAA916;
+    transition: 0.2s;
+    color: #faa916;
   }
 `;
 
@@ -114,16 +107,12 @@ const Navbar = () => {
         </Links>
         <Icons>
           <Icon href="https://www.linkedin.com/in/rocdev/" target="_blank">
-          <FaLinkedin size={24}  />
+            <FaLinkedin size={24} />
           </Icon>
           <Icon href="https://github.com/Ryocon" target="_blank">
-          <FaGithub size={24} />
+            <FaGithub size={24} />
           </Icon>
-    
-            
-            
-          
-          
+
           {/* <Button>Say Hi</Button> */}
         </Icons>
       </Container>

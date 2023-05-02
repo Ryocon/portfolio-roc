@@ -39,7 +39,6 @@ const SideA = styled.div`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
-    
   }
 `;
 const List = styled.ul`
@@ -80,7 +79,7 @@ const Button = styled.a`
   text-align: center;
 
   &:hover {
-    transition: .2s;
+    transition: 0.2s;
     background-color: #6d676e;
     color: #faa916;
   }
@@ -97,7 +96,6 @@ const SideB = styled.div`
     left: 0;
     right: 0;
     margin: auto;
-    
   }
 `;
 

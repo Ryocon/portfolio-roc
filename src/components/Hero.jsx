@@ -16,7 +16,6 @@ const Section = styled.div`
 
   @media only screen and (max-width: 768px) {
     height: 100vh;
-    
   }
 `;
 const Container = styled.div`
@@ -31,7 +30,6 @@ const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    
   }
 `;
 const SideA = styled.div`
@@ -47,20 +45,16 @@ const Title = styled.h1`
   font-size: 42pt;
   color: transparent;
   line-height: 1.2em;
-  text-shadow: 0 0 #000,
-  0 1.2em #FAA916;
+  text-shadow: 0 0 #000, 0 1.2em #faa916;
   overflow: hidden;
-  transition: .3s;
-  
+  transition: 0.3s;
+
   &:hover {
-    text-shadow:
-    0 -1.2em #000,
-    0 0 #FAA916;
+    text-shadow: 0 -1.2em #000, 0 0 #faa916;
   }
 
   @media only screen and (max-width: 768px) {
     font-size: 28pt;
-    
   }
 `;
 const Description = styled.p`
@@ -82,7 +76,7 @@ const Button = styled.button`
   /* font-size: 1em; */
 
   &:hover {
-    transition: .2s;
+    transition: 0.2s;
     background-color: #6d676e;
     color: #faa916;
   }
@@ -120,10 +114,8 @@ const HeroImage = styled.img`
   @media only screen and (max-width: 768px) {
     width: 300px;
     height: 300px;
-    
   }
 `;
-
 
 const Hero = () => {
   return (
