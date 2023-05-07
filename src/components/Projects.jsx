@@ -21,6 +21,7 @@ const Section = styled.div`
   scroll-snap-align: center;
   display: flex;
   justify-content: center;
+  
 `;
 const Container = styled.div`
   width: 1400px;
@@ -30,6 +31,7 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
+    
   }
 `;
 const SideA = styled.div`
@@ -39,6 +41,7 @@ const SideA = styled.div`
 
   @media only screen and (max-width: 768px) {
     text-align: center;
+    
   }
 `;
 const List = styled.ul`

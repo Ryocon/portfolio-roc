@@ -20,10 +20,12 @@ const Container = styled.div`
   @media only screen and (max-width: 768px) {
     width: 100%;
     flex-direction: column;
+    padding: 10px;
   }
 `;
 const ASide = styled.div`
   flex: 1;
+  /* overflow: visible; */
 
   @media only screen and (max-width: 768px) {
     display: none;

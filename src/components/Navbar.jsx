@@ -34,6 +34,12 @@ const Links = styled.div`
 const Logo = styled.img`
   width: 10%;
 
+  &:hover {
+    -webkit-filter: invert(1);
+  filter: invert(1);
+  transition: .2s;
+  }
+
   @media only screen and (max-width: 768px) {
     display: none;
   }
