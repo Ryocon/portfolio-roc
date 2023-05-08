@@ -5,7 +5,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 
 function Scene() {
   const texture = useTexture({
-    map: "/images/pokemon-api-desktop.PNG",
+    map: "./images/pokemon-api-desktop.PNG",
   });
   return (
     <>

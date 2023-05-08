@@ -5,7 +5,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 
 function Scene() {
   const texture = useTexture({
-    map: "/images/altf4-main.PNG",
+    map: "./images/altf4-main.PNG",
   });
   return (
     <>
