@@ -105,7 +105,7 @@ const Navbar = () => {
     <Section>
       <Container>
         <Links>
-          <Logo src="/images/roc-logo.PNG" />
+          <Logo src="portfolio-roc/images/roc-logo.PNG" />
           <List>
             {/* <ListItem to='#About'>About</ListItem>
             <ListItem>Projects</ListItem>
