@@ -5,7 +5,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 
 function Scene() {
   const texture = useTexture({
-    map: "/images/mcu-snip.png",
+    map: "./images/mcu-snip.png",
   });
   return (
     <>

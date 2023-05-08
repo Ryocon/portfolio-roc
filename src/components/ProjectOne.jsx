@@ -10,7 +10,7 @@ import { Canvas, useLoader } from "@react-three/fiber";
 
 function Scene() {
   const texture = useTexture({
-    map: "portfolio-roc/images/madchef-home.png",
+    map: "./images/madchef-home.png",
   });
   return (
     <>
