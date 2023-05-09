@@ -2,6 +2,9 @@ import React from "react";
 import { useRef } from "react";
 import styled from "styled-components";
 import Spline from "@splinetool/react-spline";
+import { IoLogoJavascript, IoLogoHtml5, IoLogoCss3 } from "react-icons/io";
+import { FaReact, FaNodeJs } from "react-icons/fa";
+import { TbBrandThreejs } from "react-icons/tb";
 
 const Section = styled.div`
   height: 100vh;
@@ -66,6 +69,32 @@ const Description = styled.p`
   /* gap: 10px; */
 `;
 
+const Icons = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 30px;
+  padding-bottom: 10px;
+
+  @media only screen and (max-width: 768px) {
+    width: 20%;
+    gap: 20px;
+  }
+`;
+
+const Icon = styled.a`
+  width: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  color: black;
+
+  &:hover {
+    transition: 0.2s;
+    color: #faa916;
+  }
+`;
+
 const Button = styled.button`
   width: 100px;
   padding: 10px;
@@ -108,10 +137,30 @@ const About = () => {
         <BSide>
           <Title>About</Title>
           <Description>
-            Fullstack Developer, Educator and creative based in Warickshire, UK{" "}
+            Fullstack Developer, Educator and creative based in Warwickshire, UK{" "}
             <br></br>Capable and experienced with a range of modern Fullstack
             technologies to build and design projects for the web
           </Description>
+          <Icons>
+            <Icon>
+              <IoLogoJavascript size={24} />
+            </Icon>
+            <Icon>
+              <IoLogoHtml5 size={24} />
+            </Icon>
+            <Icon>
+              <IoLogoCss3 size={24} />
+            </Icon>
+            <Icon>
+              <FaNodeJs size={24} />
+            </Icon>
+            <Icon>
+              <FaReact size={24} />
+            </Icon>
+            <Icon>
+              <TbBrandThreejs size={24} />
+            </Icon>
+          </Icons>
           <Button></Button>
         </BSide>
       </Container>
